@@ -1,0 +1,266 @@
+:root {
+  --body-color: #282c34;
+  --accent-color: #f65282;
+  --text-decoration: underline;
+}
+
+body {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--body-color);
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 58px;
+  margin-bottom: 0px;
+  margin-top: -11px;
+}
+
+h6 {
+  margin-top: 4px;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.femco-link {
+  color: black;
+  text-decoration: none;
+}
+.femco-link:hover {
+  color: var(--accent-color);
+}
+
+.launch-links button {
+  position: relative;
+  display: inline-block;
+  padding: 17px 30px;
+  background-color: #0f1622;
+  color: #fff;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+.launch-links button:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  background-color: #d4d9f3;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+
+.launch-links button:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: -10px;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+
+.launch-links button:hover {
+  background-color: #d6c64d;
+  border: #d6c64d;
+}
+
+.launch-links button:hover::before {
+  top: -10px;
+  left: -10px;
+}
+
+.launch-links button:hover::after {
+  top: 10px;
+  left: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.opacity {
+  opacity: 0.9;
+}
+
+.navbar-items:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.img {
+  width: 50%;
+}
+.img-border {
+  border: 2px solid var(--accent-color);
+  padding: 27px 0;
+}
+
+.margin {
+  margin: 235px 0;
+}
+
+.launch-links {
+  color: var(--body-color);
+  text-decoration: none;
+}
+.launch-links:hover {
+  color: var(--body-color);
+  text-decoration: underline;
+}
+
+.text {
+  text-align: left;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+.email-link,
+.social-link {
+  text-decoration: none;
+  color: black;
+}
+.email-link:hover,
+.social-link:hover {
+  color: var(--accent-color);
+}
+
+.social-link {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.social-links {
+  margin-bottom: 30px;
+}
+
+.button {
+  margin-top: 15px;
+}
+
+.nav-color {
+  color: var(--accent-color) !important;
+}
+
+.about-me {
+  text-decoration: var(--text-decoration);
+  margin-bottom: 25px;
+}
+
+.about {
+  padding-top: 35px;
+  font-size: 25px;
+}
+
+.about-content {
+  padding-top: 30px;
+}
+
+.weather-description {
+  padding-top: 80px;
+}
+
+.dictionary-description {
+  padding-top: 50px;
+}
+
+.my-work {
+  text-decoration: var(--text-decoration);
+  margin: 25px 0;
+}
+
+.contact-me {
+  text-decoration: var(--text-decoration);
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.github {
+  font-size: 16px;
+}
+
+.github a {
+  color: black;
+}
+
+.github a:hover {
+  color: var(--accent-color);
+}
+
+.ul {
+  margin-left: auto;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding-left: 0 !important;
+  }
+
+  h2 {
+    font-size: 35px;
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  h6 {
+    margin-bottom: 27px;
+  }
+
+  button {
+    margin-top: 5px;
+  }
+
+  .margin {
+    margin: 0;
+  }
+
+  .about-content,
+  .weather-description,
+  .matchmaking-description,
+  .dictionary-description {
+    padding: 10px;
+  }
+
+  .dictionary-description {
+    margin-top: 0 !important;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .email-link {
+    font-size: 27px;
+  }
+
+  .weather-img {
+    width: 380px;
+    margin-top: 15px;
+  }
+}
